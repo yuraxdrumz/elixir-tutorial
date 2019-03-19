@@ -17,13 +17,13 @@ IO.inspect ~w(this is an atom list sigil)a
 IO.inspect ~s(String with escape codes \x26 #{"inter" <> "polation"})
 IO.inspect ~S(String without escape codes \x26 without #{interpolation})
 
-@doc ~S"""
-Converts double-quotes to single-quotes.
+# @doc ~S"""
+# Converts double-quotes to single-quotes.
 
-## Examples
+# ## Examples
 
-    iex> convert("\"foo\"")
-    "'foo'"
+#     iex> convert("\"foo\"")
+#     "'foo'"
 
-"""
+# """
 # def convert(...)
