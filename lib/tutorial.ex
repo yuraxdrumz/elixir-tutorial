@@ -1,4 +1,6 @@
 
+require User
+
 defmodule Tutorial do
   @moduledoc """
   Documentation for Tutorial.
@@ -14,7 +16,8 @@ defmodule Tutorial do
 
   """
   def hello do
-    IO.puts "test"
+    a = %User{name: "yura", age: 10}
+    IO.inspect Size.size(a)
     :world
   end
 end
